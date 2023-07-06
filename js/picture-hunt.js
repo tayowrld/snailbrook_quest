@@ -119,7 +119,7 @@ function i_resolved_1(){
     let area_2 = document.getElementById("area2").value;
     let area_3 = document.getElementById("area3").value;
     let area_4 = document.getElementById("area4").value;
-    if ((area_1 == "A") && (area_2 == "Z") && (area_3 == "O") && (area_4 == "C")){
+    if ((area_1 == "A") || (area_1 == "a") && (area_2 == "Z") || (area_2 == "z") && (area_3 == "O") || (area_3 == "o") && (area_4 == "C") || (area_4 == "c")){
         let myAudio = new Audio;
         myAudio.src = "././audio/yay.mp3";
         myAudio.play();
