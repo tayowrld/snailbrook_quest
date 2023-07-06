@@ -1,0 +1,251 @@
+body{
+    max-width: 2600px;
+    max-height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+.house{
+    width: 0;
+    height: 0;
+    margin: 0;
+    display: block;
+}
+.wall{
+    width: 2800px;
+    overflow-y: scroll;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-image: url(../images/wall.jpeg);
+}
+
+.pictures-container{
+    width: 1800px;
+    overflow-y: scroll;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.column-pictures{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+h2{
+    width: max-content;
+    background-color: antiquewhite;
+    color: black;
+    position: absolute;
+    bottom: -80px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+#first h2{
+    left: calc(50% - 80px / 2);
+}
+
+#second h2{
+    left: calc(50% - 105px / 2);
+}
+
+#third h2{
+    left: calc(50% - 120px / 2);
+}
+
+#second, #third{
+    margin: 50px 0;
+}
+
+.picture-block{
+    height: max-content;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.picture#pepe{
+    width: 400px;
+    height: 500px;
+    background-image: url(../images/pictures/pepe.png);
+    background-size: cover;
+    background-position: -100px;
+    border: 10px solid #6a4418;
+    border-radius: 15px;
+    position: relative;
+}
+.letter#pepe-letter{
+    width: 200px;
+    height: 150px;
+    background-image: url(../images/pictures/pepe-letter.png);
+    background-size: cover;
+    border-radius: 15px;
+    position: relative;
+    top: 305px;
+    left: 93px;
+}
+
+.picture#n-word{
+    width: 400px;
+    height: 200px;
+    background-image: url(../images/pictures/n-word.jpeg);
+    background-size: cover;
+    background-position: 0 -100px;
+    border: 10px solid #6a4418;
+    border-radius: 15px;
+    position: relative;
+}
+
+.letter#n-letter{
+    width: 80px;
+    height: 30px;
+    background-image: url(../images/pictures/n-letter.png);
+    background-size: cover;
+    border-radius: 15px;
+    position: relative;
+    top: 80px;
+    left: 180px;
+}
+
+.picture#brodie{
+    width: 400px;
+    height: 200px;
+    background-image: url(../images/pictures/brodie.jpeg);
+    background-size: cover;
+    background-position: 0 -100px;
+    border: 10px solid #6a4418;
+    border-radius: 15px;
+    position: relative;
+}
+.letter#brodie-letter{
+    width: 47px;
+    height: 47px;
+    background-image: url(../images/pictures/brodie-letter.png);
+    background-size: cover;
+    border-radius: 15px;
+    position: relative;
+    top: 108px;
+    left: 217px;
+}
+
+.picture#cicie{
+    width: 400px;
+    height: 500px;
+    background-image: url(../images/pictures/cicie.jpeg);
+    background-size: cover;
+    border: 10px solid #6a4418;
+    border-radius: 15px;
+    position: relative;
+}
+.letter#cici-letter{
+    width: 220px;
+    height: 280px;
+    background-image: url(../images/pictures/cicie-letter.png);
+    background-size: cover;
+    border-radius: 15px;
+    position: relative;
+    top: 128px;
+    left: 50px;
+}
+
+.door-container{
+    width: 800px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.door{
+    width: 500px;
+    height: 580px;
+    background-image: url(../images/door.png);
+    background-size: cover;
+}
+
+section.door-playfull{
+    width: 2000px;
+    min-width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    position: relative;
+
+    background-image: url(../images/door.png);
+    background-size: 4000px;
+    background-position: -900px -800px;
+
+    display: none;
+}
+
+.bg-door{
+    width: 100%;
+    height: 100%;
+    background-color: #0000002d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.door-playfull input{
+    width: 100%;
+    height: 100%;
+    font-size: 180px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.keylock{
+    width: 2000px;
+    min-width: 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 10;
+}
+
+.keylock-container{
+    width: 1200px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    background-color: #cf77ff;
+    padding: 50px;
+    border-radius: 100px;
+}
+
+.area{
+    width: 200px;
+    height: 300px;
+    border-radius: 50px;
+    background-color: rgb(186, 255, 199);
+
+    box-shadow: 10px 10px 0px 0px rgb(176, 176, 176);
+}
+
+.sexy-button{
+    background-color: red;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+
+    box-shadow: 10px 10px 0px 0px rgb(174, 1, 1);
+}

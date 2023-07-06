@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.2">
+    <title>Escape from home</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/pictures.css">
+</head>
+<body>
+    <section class="door-playfull" id="door-playfull">
+        <div class="bg-door" onclick="show_the_door()"></div>
+        <div class="keylock">
+            <div class="keylock-container">
+                <div class="area" id="key1">
+                    <input type="text" id="area1" maxlength="1">
+                </div>
+                <div class="area" id="key2">
+                    <input type="text" id="area2" maxlength="1">
+                </div>
+                <div class="area" id="key3">
+                    <input type="text" id="area3" maxlength="1">
+                </div>
+                <div class="area" id="key4">
+                    <input type="text" id="area4" maxlength="1">
+                </div>
+            </div>
+            <div class="sexy-button" onclick="i_resolved_1()"></div>
+        </div>
+    </section>
+    <section class="house" id="house">
+        <div class="wall">
+            <div class="pictures-container">
+                <div class="picture-block" id="first">
+                    <div class="picture" id="pepe">
+                        <div class="letter" id="pepe-letter" onclick="pepe_focus()"></div>
+                    </div>
+                    <h2>PAPA</h2>
+                </div>
+                <div class="column-pictures">
+                    <div class="picture-block" id="second">
+                        <div class="picture" id="n-word">
+                            <div class="letter" id="n-letter" onclick="n_focus()"></div>
+                        </div>
+                        <h2>MAMA</h2>
+                    </div>
+                    <div class="picture-block" id="third">
+                        <div class="picture" id="brodie">
+                            <div class="letter" id="brodie-letter" onclick="brodie_focus()"></div>
+                        </div>
+                        <h2>BRODIE</h2>
+                    </div>
+                </div>
+                <div class="picture-block" id="first">
+                    <div class="picture" id="cicie">
+                        <div class="letter" id="cici-letter" onclick="cici_focus()"></div>
+                    </div>
+                    <h2>CICIE</h2>
+                </div>
+            </div>
+            <div class="door-container">
+                <div class="door" onclick="open_the_door()"></div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/picture-hunt.js"></script>
+</body>
+</html>
